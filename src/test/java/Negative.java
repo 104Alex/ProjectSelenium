@@ -43,12 +43,12 @@ public class Negative {
 
         WebElement LoginButton = driver.findElement(By.id("login-button"));
         LoginButton.click();
-        Thread.sleep(3000);
+        Thread.sleep(1000);
 //извлечение текста из элемента на странице
         WebElement errorMessage = driver.findElement(By.xpath("//h3[@data-test='error']"));
-        String actualTexMessange = errorMessage.getAttribute("value");
+        String actualTexMessange = errorMessage.getText();
         System.out.println(actualTexMessange);
-         String expectedMessage = "Epik sadface: Username and password do not " + "match any user in this service";
+         String expectedMessage = "Epic sadface: Username and password do not match any user in this service";
          Assert.assertEquals(actualTexMessange,expectedMessage);
          System.out.println("Текст сооющение об ошибки проверен");
          driver.quit();
