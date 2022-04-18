@@ -1,3 +1,4 @@
+import base.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,17 +7,12 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class FirstTest {
+public class FirstTest extends Base {
 
     @Test
     public void firstTest(){
 
-        System.setProperty("webdriver.chrome.driver", "c:/selenium/chromedriver.exe");
 
-        WebDriver driver = new ChromeDriver();
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
 
         driver.get("https://www.google.com");
 
@@ -26,6 +22,6 @@ public class FirstTest {
 
         System.out.println(driver.getTitle());
 
-        driver.quit();
+
     }
 }

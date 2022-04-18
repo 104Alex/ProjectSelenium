@@ -1,5 +1,4 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import base.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,17 +8,12 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Negative {
+public class Negative extends Base {
 
     @Test
     public void practiceTest() throws InterruptedException {
         // Стандартная чатсь верх
-        System.setProperty("webdriver.chrome.driver", "D:/Automated Testing/chromedriver.exe");
 
-        WebDriver driver = new ChromeDriver();
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
 //стандартная часть
         // начало теста
         driver.get("https://www.saucedemo.com/");

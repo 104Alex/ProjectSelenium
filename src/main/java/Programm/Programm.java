@@ -1,22 +1,22 @@
 package Programm;
 
+
 import java.time.Duration;
+
+import base.Base;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-class FirstTest {
+class FirstTest extends Base {
     public FirstTest() {
     }
 
     @Test
     public void firstTest() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "D:/Automated Testing/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10L));
-        driver.manage().window().maximize();
+
         driver.get("https://www.onliner.by");
         Thread.sleep(5000L);
         WebElement element = driver.findElement(By.name("q"));
