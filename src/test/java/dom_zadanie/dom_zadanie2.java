@@ -4,7 +4,7 @@ class dom_zadanie {
     public static void main(String[] args)
     {
 
-        int a = 69;
+        int a = 68;
         int b = 11;
         int c = a + b;
         int d = a * b;
