@@ -5,44 +5,29 @@ public class Lesson13 {
 
 // Задача №1
 
-        int i = 0;
+        int i = 5;
         while (i < 16) {
 
-            System.out.println(i);
+           System.out.println(i);
             i++;
-        }
+       }
 
 //         Задача №2
-
-        int a2 = 5;
-        int b2 = 2;
-        do {
-            System.out.println(Math.pow(a2, b2));
-            b2 = b2 + 2;
-        }
-        while (Math.pow(a2, b2) < 10000);
-
+        for (int i1 = 5; i < 10000; i = i * 5) ;
+        System.out.println(i);
+    }
 // Задача №3
 
-        int x = 40;
-        for (; x <= 60; x = x + 4) {
-            {
-                System.out.println(x);
-            }
-
-        }
-    }
-    int y = 40;
-
     {
-        while (y <= 60)
-        {
-            if (y % 4 == 0) ;
-            System.out.println(y);
-            y = y + 1;
+        for(int i2 = 40; i2 <= 60;i2++)
+            if (i2 % 4 == 0) ;
+
+        boolean i2 = false;
+        System.out.println(i2);
+
 
         }
     }
-}
+
 
 
