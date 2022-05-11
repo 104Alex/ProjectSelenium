@@ -2,6 +2,7 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -26,5 +27,16 @@ public class Base {
     @AfterTest
     public void endTest() {
         driver.quit();
+    }
+
+    //ПРОВЕРКА ЧТО ОТКРЫЛАСЬ НУЖНАЯ СТРАНИЦА
+    public static String checkTitle(String titleExpected) {
+        String titleActual = driver.getTitle();
+       // String titleExpected = "Swag Labs";
+
+        Assert.assertEquals(titleActual, titleExpected);
+        String result = "Заголовок страницы проверен";
+        //System.out.println("Заголовок страницы проверен");
+        return  result;
     }
 }
