@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class SauceDemoPositiveLoginTest extends Base {
+public class sauceDemoPositiveLoginTest extends Base {
 
     @Test
     public void sauceDemoPositiveLoginTest() throws InterruptedException {
